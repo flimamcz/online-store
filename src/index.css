@@ -579,3 +579,25 @@ a {
   background-color: #1c8d64;
   transition: 0.3s ease-in-out;
 }
+
+.btn-remove-checkout {
+  color: #922424;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-component {
+  background-color: #003BE5;
+  padding: 1.5rem;
+}
+
+.cart-size {
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  top: -21px;
+  right: 25px;
+}

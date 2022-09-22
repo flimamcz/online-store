@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getProductById } from '../services/api';
-import Star from '../assets/images/icon-star.svg'
+import Header from "../components/Header";
 
 export default class ProductDetails extends Component {
   state = {
@@ -113,6 +112,7 @@ export default class ProductDetails extends Component {
 
     return (
       <div>
+        <Header cartItems={cartItems}/>
         <section className="product-details">
           <img
             data-testid="product-detail-image"
