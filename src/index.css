@@ -30,14 +30,13 @@ a {
   border-radius: 50%;
   border: 3px solid #003BE5;
   border-top-color: #ffffff;
-  margin: 200px auto;
+  margin: 0 auto;
   animation: loading 1s infinite;
 }
 
 .container_loading {
   width: 100%;
-  height: 80vh;
-  display: flex;
+  height: 90vh;
 }
 
 @keyframes loading{
@@ -113,8 +112,8 @@ a {
   font-weight: 600;
   color: #000;
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 14px;
+  right: 17px;
 }
 
 .container-categories {
@@ -460,3 +459,123 @@ a {
   cursor: pointer;
 }
 
+.container-checkout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.container-products {
+  width: 95%;
+  margin: 5rem auto;
+  background-color: white;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+}
+
+.container-products h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.container-products h1::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  border-radius: 0.1rem;
+  display: block;
+  margin: 0.5rem auto;
+  background-color: #000;
+}
+
+.card-product-checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 300px;
+}
+
+.form-checkout {
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 500px;
+  padding: 3rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+
+.form-checkout h1 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.form-checkout label span {
+  display: none;
+}
+
+.form-dados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-dados input {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  border: 1px solid #31C28D;
+}
+
+.method-pay h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container-pay {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #31C28D;
+  padding-bottom: 2rem;
+}
+
+.container-pay label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.checkout-button {
+  width: 40%;
+  background-color: #31C28D;
+  border: none;
+  border-radius: 00.25rem;
+  padding: 1rem;
+  color: #ffff;
+  font-weight: 500;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #1c8d64;
+  transition: 0.3s ease-in-out;
+}
